@@ -1,0 +1,24 @@
+@use "../globals/mixin.scss" as m;
+.mainReplyIcon:hover {
+  color: SteelBlue;
+}
+.mainReplyIcon__retweetsicons {
+  @include m.icons-center;
+  position: absolute;
+}
+
+.cardContainer__headerIcon {
+  @include m.icons-weight;
+}
+
+@media only screen and (max-width: 475px) {
+  .mainReplyIcon__retweetsicons {
+    @include m.gapmobileicons;
+    }
+
+    .replytooltip{
+      background-color: red!important;
+      bottom: 0;
+
+    }
+}

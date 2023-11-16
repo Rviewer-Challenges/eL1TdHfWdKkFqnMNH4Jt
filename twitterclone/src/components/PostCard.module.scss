@@ -1,0 +1,114 @@
+@use "../globals/colors.scss" as c;
+@use "../globals/mixin.scss" as m;
+.cardContainer {
+  display: grid;
+  width: auto;
+  cursor: pointer;
+  //grid-auto-rows: max-content;
+  ul {
+    list-style: none;
+    color: c.$color-white;
+  }
+  &__profile {
+    grid: a;
+    justify-self: start;
+    @include m.avatar;
+    margin-left: -20px;
+  }
+  &__container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 20px auto;
+    //display: flex;
+    //text-align: justify;
+    flex-direction: column;
+    margin-top: 10px;
+    min-width: 750px;
+    width: 90%;
+    justify-self: center;
+    @include m.border-website;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__header {
+    grid: b;
+    color: c.$color-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__headerInfo {
+    display: flex;
+    gap: 10px;
+  }
+  &__headerIcon {
+    width: 20px;
+    height: 20px;
+  }
+  &__date {
+    color: gray;
+  }
+  &__footer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px;
+    color: c.$color-grey;
+    font-size: 13px;
+    max-width: 680px;
+    min-width: 680px;
+    .items:nth-of-type(5) {
+      justify-self: center;
+    }
+  }
+}
+@media only screen and (max-width: 475px) {
+  .cardContainer {
+    display: flex;
+    max-width: 385px;
+    margin-top: 20px;
+    max-height: 460px;
+    &__content {
+      display: flex;
+      text-align: justify;
+      width: 100%;
+      font-size: 13px;
+      overflow-wrap: break-word;
+    }
+    &__contentText {
+      width: 99%;
+    }
+    &__profile {
+      img {
+        @include m.avatar;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        margin-left: 40px;
+      }
+    }
+    &__footer {
+      margin-left: 20px;
+    }
+  }
+  .iconsweight {
+    width: 240px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    &__items {
+      margin-left: 16px;
+      width: 100%;
+      padding: 5px;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 19.5rem;
+    position: relative;
+    margin-left: 30px;
+  }
+}

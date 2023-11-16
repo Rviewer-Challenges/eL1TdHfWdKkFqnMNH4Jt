@@ -1,0 +1,15 @@
+@import "../../globals/colors.scss";
+@import "../../globals/mixin.scss";
+.tooltip {
+  @include tooltip;
+  top: 1.5rem;
+  margin-left: 0.1rem;
+}
+
+@media only screen and (max-width: 475px) {
+  .tooltip {
+    @include tooltip;
+    padding: 2px 2px 2px 2px;
+    position: absolute;
+  }
+}

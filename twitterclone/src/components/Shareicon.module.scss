@@ -1,0 +1,13 @@
+@use "../globals/mixin.scss" as m;
+.cardContainer__headerIcon {
+  display: flex;
+  margin-left: 4em;
+  @include m.icons-weight;
+}
+
+@media only screen and (max-width: 475px) {
+.sharecontainer{ 
+  display: none;
+  
+}
+}

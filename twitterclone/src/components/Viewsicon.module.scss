@@ -1,0 +1,20 @@
+@use "../globals/mixin" as m;
+
+.mainViewsIcon:hover {
+  color: SteelBlue;
+}
+.mainViewsIcon__views {
+  position: absolute;
+  @include m.icons-center;
+}
+.cardContainer__headerIcon {
+  @include m.icons-weight;
+}
+
+@media only screen and (max-width: 475px) {
+  .mainViewsIcon__views {
+    @include m.gapmobileicons;
+         margin-left: -10px;
+
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "likes": 25,
+  "comments": 5,
+  "retweets": 10,
+  "content": "Este es un tweet de ejemplo.",
+  "views": 500,
+  "images": [
+    {
+      "id": 1,
+      "names": "imagen1",
+      "url": "https://ejemplo.com/imagen1.jpg"
+    },
+    {
+      "id": 2,
+      "names": "imagen2",
+      "url": "https://ejemplo.com/imagen2.jpg"
+    }
+  ]
+}

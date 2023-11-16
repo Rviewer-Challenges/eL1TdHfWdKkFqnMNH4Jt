@@ -1,0 +1,32 @@
+@use "../globals/colors.scss" as c;
+@use "../globals/mixin.scss" as m;
+.likeAnimate__like {
+  @include m.icons-center;
+  justify-content: start;
+
+  &:hover {
+    color: c.$color-red;
+    transition: 0.5s ease;
+  }
+}
+.likecontainer {
+  position: absolute;
+}
+.mainLikeIcon {
+  color: c.$color-red;
+}
+.cardContainer__headerIcon {
+  @include m.icons-weight;
+}
+@media only screen and (max-width: 475px) {
+  .likeAnimate__like {
+    width: 3em;
+    height: 4em;
+    @include m.gapmobileicons;
+    padding-left: 5px;
+    &:hover {
+      color: c.$color-red;
+      transition: 0.5s ease;
+    }
+  }
+}
