@@ -1,6 +1,5 @@
 import { useState } from "react";
 import RePostIcon from "../ui/icons/RePostIcon";
-import Tooltip from "../ui/tooltip/Tooltip";
 import styles from "./Reposticon.module.scss";
 const Reposticon = (props) => {
   const { comments } = props;
@@ -19,7 +18,7 @@ const Reposticon = (props) => {
           {comments}
         </div>
         <div className={styles.repostcontainer}>
-          {isHovered && <Tooltip title="Repost" />}
+          {isHovered  }
         </div>
       </li>
     </main>

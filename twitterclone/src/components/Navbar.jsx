@@ -1,4 +1,4 @@
-import Logo from "../ui/icons/Logo";
+import Logo from '../ui/icons/Logo';
 
 export const Navbar = () => {
   return (
@@ -7,7 +7,7 @@ export const Navbar = () => {
         <div className="bg-white w-6 h-6 mt-3 lg:mb-6">
           <Logo fill="white" />
         </div>
-        <ul className="hidden lg:flex flex-col gap-4">
+        <ul className="hidden lg:flex flex-col gap-4 text-sm">
           <li>Home</li>
           <li>Explore</li>
           <li>Notifications</li>
@@ -18,7 +18,7 @@ export const Navbar = () => {
           <li>Premium</li>
           <li>Profile</li>
           <li>More</li>
-        </ul>{" "}
+        </ul>{' '}
       </nav>
     </aside>
   );

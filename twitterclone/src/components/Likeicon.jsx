@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
-import HeartIcon from "../ui/icons/HeartIcon";
-import Tooltip from "../ui/tooltip/Tooltip";
-import styles from "./LikeIcon.module.scss";
+import { useCallback, useEffect, useState } from 'react';
+import HeartIcon from '../ui/icons/HeartIcon';
+import Tooltip from '../ui/tooltip/Tooltip';
+import styles from './LikeIcon.module.scss';
 
 const Likeicon = (props) => {
   const { likes } = props;
@@ -14,7 +14,7 @@ const Likeicon = (props) => {
     addlikes();
   }, [addlikes]);
   return (
-    <main className={isHovered ? `${styles.mainLikeIcon}` : ""}>
+    <main className={isHovered ? `${styles.mainLikeIcon}` : ''}>
       <section
         onClick={addlikes}
         onMouseEnter={() => setIsHovered(true)}
@@ -23,7 +23,7 @@ const Likeicon = (props) => {
         <div className={styles.likeAnimate__like}>
           <HeartIcon
             className={styles.cardContainer__headerIcon}
-            fill={isHovered ? "red" : "grey"}
+            fill={isHovered ? 'red' : 'grey'}
           />
           {nlikes ? likes : likes + 1}
           <div className={styles.likecontainer}>

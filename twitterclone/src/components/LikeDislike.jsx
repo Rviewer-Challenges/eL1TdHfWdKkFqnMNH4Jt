@@ -1,4 +1,3 @@
-
 const LikeDislike = () => {
   return (
     <div>
@@ -7,6 +6,6 @@ const LikeDislike = () => {
       )
     </div>
   );
-}
+};
 
-export default LikeDislike
+export default LikeDislike;

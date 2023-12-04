@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ViewsIcon from "../ui/icons/ViewsIcon";
-import Tooltip from "../ui/tooltip/Tooltip";
 import styles from './Viewsicon.module.scss';
 const Viewsicon = (props) => {
   const { views } = props;
@@ -20,7 +19,7 @@ const Viewsicon = (props) => {
         {views ? views : null}
         </div>
         <div className={styles.viewscontainer}>
-          {isHovered && <Tooltip title="Views" />}
+          {isHovered}
         </div>
       </li>
     </main>

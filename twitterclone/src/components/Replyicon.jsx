@@ -1,7 +1,6 @@
-import { useState } from "react";
-import ReplyIcon from "../ui/icons/ReplyIcon";
-import Tooltip from "../ui/tooltip/Tooltip";
-import styles from "./Replyicon.module.scss";
+import { useState } from 'react';
+import ReplyIcon from '../ui/icons/ReplyIcon';
+import styles from './Replyicon.module.scss';
 
 const Replyicon = (props) => {
   const { retweets } = props;
@@ -22,7 +21,7 @@ const Replyicon = (props) => {
           <span>{retweets && retweets}</span>
         </div>
         <div className={styles.replycontainer}>
-          {isHovered && <Tooltip title="Reply"   className='replytooltip'/>}
+          {isHovered}
         </div>
       </li>
     </main>

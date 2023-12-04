@@ -1,10 +1,8 @@
 import { useState } from "react";
-
-import { getTweetsApi } from "../services/api";
+import { createTweetApi, deleteTweetApi, getTweetsApi } from "../services/api";
 export function useTweets() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
-
   const getTweets = async () => {
     try {
       setLoading(true);
@@ -18,20 +16,26 @@ export function useTweets() {
   const deleteTweet = async (id) => {
     try {
       setLoading(true);
-      await deleteTweet(id);
+      await deleteTweetApi(id);
       setLoading(false);
     } catch (error) {
       setLoading(false);
     }
   };
-
+  const createTweet = async (content) => {
+    try {
+      setLoading(true);
+      await createTweetApi(content);
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+    }
+  };
   return {
     loading,
     data,
     getTweets,
     deleteTweet,
+    createTweet,
   };
 }
-
-
-

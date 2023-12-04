@@ -1,9 +1,9 @@
 import {
   RemoveScrollBar,
-  noScrollbarsClassName,
-} from "react-remove-scroll-bar";
-import CloseIcon from "../ui/icons/CloseIcon";
-import "./ImageModal.css";
+  noScrollbarsClassName
+} from 'react-remove-scroll-bar';
+import CloseIcon from '../ui/icons/CloseIcon';
+import './ImageModal.css';
 const ImageModal = (props) => {
   const { src } = props;
 

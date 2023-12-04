@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ShareIcon from "../ui/icons/ShareIcon";
-import Tooltip from "../ui/tooltip/Tooltip";
 import styles from "./Shareicon.module.scss";
 
 const Shareicon = () => {
@@ -11,14 +10,14 @@ const Shareicon = () => {
         onMouseEnter={() => setIsHovered((prevstate) => !prevstate)}
         onMouseLeave={() => setIsHovered((prevstate) => !prevstate)}
       >
-        <div className={styles.container}>
+        <div className={styles.mainShareIcon}>
           <ShareIcon
             className={styles.cardContainer__headerIcon}
-            fill={isHovered ? "SteelBlue" : "grey"}
+            fill={isHovered ? 'SteelBlue' : "grey"}
           />
         </div>
         <div className={styles.sharecontainer}>
-          {isHovered && <Tooltip title="Share"/>}
+          {isHovered}
         </div>
       </li>
     </main>

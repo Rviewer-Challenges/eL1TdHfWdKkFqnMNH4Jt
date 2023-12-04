@@ -1,4 +1,3 @@
-
 export const ShowAllPosts = () => {
   return (
     <main >
@@ -8,5 +7,3 @@ export const ShowAllPosts = () => {
     </main>
   );
 };
-
-

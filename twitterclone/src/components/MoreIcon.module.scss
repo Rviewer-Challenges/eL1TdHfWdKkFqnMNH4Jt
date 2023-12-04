@@ -1,6 +1,5 @@
 @use "../globals/colors.scss" as c;
 @use "../globals/mixin.scss" as m;
-
 .moreicon {
   cursor: pointer;
   position: absolute;
@@ -13,10 +12,23 @@
 .cardContainer__headerIcon {
   @include m.icons-weight;
 }
-
 @media only screen and (max-width: 475px) {
   .moreicon {
-    margin: 0 auto;
+    margin: 0 25px;
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (width >=476px) {
+  .moreicon {
+    margin: 0 146px;
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (width >=1440px) {
+  .moreicon {
+    margin: 0 513px;
     position: absolute;
     right: 0;
   }

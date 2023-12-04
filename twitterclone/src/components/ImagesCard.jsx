@@ -1,19 +1,18 @@
 import ImageModal from "./ImageModal";
-import "./ImagesCard.scss";
 const ImagesCard = (props) => {
   const { image, setOpenModal, openModal } = props;
+
   return (
-    <main className="single-image">
+    <main >
       <img
-        src={image.url}
-        alt={image.name}
+        src={image}
         onClick={() => setOpenModal((prevState) => !prevState)}
+        className=" w-80"
       />
-      <div className={openModal ? "openModal" : "closeModal"}>
+      <div>
         {openModal && (
           <ImageModal
-            src={image.url}
-            alt={image.name}
+            src={image}
             setOpenModal={setOpenModal}
           />
         )}
