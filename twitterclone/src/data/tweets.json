@@ -1,0 +1,28 @@
+{
+  "tweets": [
+    {
+      "id": 1,
+      "likes": 25,
+      "comments": 5,
+      "retweets": 10,
+      "content": "Saturday vibes: laid-back brunch and a sunny patio. Life's simple pleasures. 🥑🌞 #WeekendChill",
+      "views": 500
+    },
+    {
+      "id": 1,
+      "likes": 25,
+      "comments": 5,
+      "retweets": 10,
+      "content": "Sunday ritual: a long walk in the park with good music. 🎶🚶‍♀️ #NatureWalk",
+      "views": 500
+    },
+    {
+      "id": 1700916178498,
+      "date": "November 25th 2023, 1:42:58 pm",
+      "content": "hello",
+      "likes": 24,
+      "retweets": 7,
+      "comments": 25
+    }
+  ]
+}

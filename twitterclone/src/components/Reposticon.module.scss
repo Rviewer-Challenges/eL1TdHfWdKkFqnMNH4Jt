@@ -1,0 +1,21 @@
+@use "../globals/mixin.scss" as m;
+
+.mainRepostIcon:hover {
+  color: MediumSeaGreen;
+}
+.mainRepostIcon__repost {
+  @include m.iconsposition;
+}
+.cardContainer__headerIcon {
+  @include m.icons-weight;
+}
+@media only screen and (max-width: 475px) {
+  .mainRepostIcon__repost {
+    padding-left: 5px;
+  }
+  .mainRepostIcon:hover {
+    color: MediumSeaGreen;
+  }
+}
+
+

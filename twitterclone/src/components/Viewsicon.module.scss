@@ -1,0 +1,11 @@
+@use "../globals/mixin" as m;
+
+.mainViewsIcon:hover {
+  color: SteelBlue;
+}
+.mainViewsIcon__views {
+  @include m.iconsposition;
+}
+.cardContainer__headerIcon {
+  @include m.icons-weight;
+}
