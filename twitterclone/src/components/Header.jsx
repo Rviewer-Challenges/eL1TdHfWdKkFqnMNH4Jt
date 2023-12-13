@@ -7,7 +7,6 @@ import Settings from '../ui/icons/Settings';
 export const Header = () => {
   const [activeStyle, setActiveStyle] = useState(true);
   const { urlavatar: profilePhoto } = user;
-
   return (
     <>
       <header className="md:flex md:flex-row md:w-full  md:pt-2 lg:pt-2  xl:pt-2  pb-2 text-sm">
