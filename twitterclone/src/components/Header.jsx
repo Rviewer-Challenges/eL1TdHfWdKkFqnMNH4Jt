@@ -1,11 +1,8 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import user from '../data/user.json';
 import Logo from '../ui/icons/Logo';
 import Settings from '../ui/icons/Settings';
 
 export const Header = () => {
-  const [activeStyle, setActiveStyle] = useState(true);
   const { urlavatar: profilePhoto } = user;
   return (
     <>
