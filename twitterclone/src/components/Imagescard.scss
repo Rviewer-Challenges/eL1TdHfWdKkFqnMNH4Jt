@@ -1,0 +1,45 @@
+@use "../globals/mixin.scss" as m;
+@use "../globals/colors.scss" as c;
+.single-image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-top: 30px;
+  img {
+    border-radius: 7%;
+  }
+  display: flex;
+}
+
+.openModal {
+  position: absolute;
+  background-color: c.$color-black;
+  min-height: min-content;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  img {
+    width: 2000px;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .openModal {
+    height: 100rem;
+    position: absolute;
+    z-index: 9999;
+    top: -200px;
+    left: -40px;
+    width: 25rem;
+  }
+
+  .single-image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    img {
+      border-radius: 7%;
+    }
+  }
+}

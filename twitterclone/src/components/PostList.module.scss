@@ -1,0 +1,7 @@
+@use "../globals/mixin.scss" as m;
+.main {
+  @include m.border-website;
+  padding-bottom: 100px;
+
+}
+

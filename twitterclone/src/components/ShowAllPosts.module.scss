@@ -1,0 +1,21 @@
+@use "../globals/colors.scss" as c;
+@use "../globals/mixin.scss" as m;
+.main {
+  color: c.$color-blue;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  font-size: 8px;
+  @include m.border-website;
+}
+@media only screen and (max-width: 475px) {
+  .main {
+    padding-bottom: 20px;
+    padding-top: 50px;
+    font-size: 12px;
+  }
+}

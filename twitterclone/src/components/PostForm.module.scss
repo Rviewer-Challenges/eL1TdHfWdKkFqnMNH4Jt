@@ -1,0 +1,74 @@
+@use "../globals/colors.scss" as c;
+@use "../globals/mixin.scss" as m;
+.container {
+  .form {
+    color: c.$color-white;
+    caret-color: c.$color-bluedark;
+    font-size: 20px;
+    max-width: 100%;
+    border-bottom: 2px;
+    &__textarea {
+      resize: none;
+      color: c.$color-white;
+      border: none;
+      text-align: justify;
+      margin-left: 20px;
+      margin-top: 16px;
+      max-width: 546px;
+      max-height: 500px;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__buttonWrapper {
+      display: flex;
+      align-items: center;
+      height: 50px;
+  margin-left: 20px;
+        margin-top: 16px;
+        max-width: 546px;
+        gap: 320px;
+        align-items: center;
+        width: 740px;
+        justify-content: space-around;
+    }
+    &__icons {
+      display: flex;
+      margin-left: 20px;
+      margin-top: 16px;
+      max-width: 546px;
+      gap: 320px;
+      align-items: center;
+      width: 740px;
+      justify-content: space-around;
+    }
+    &__icon {
+      display: flex;
+      width: 1rem;
+      height: 18px;
+      fill: #1c9bef;
+      margin: 9px;
+    }
+    &__button {
+      color: c.$color-white;
+      background-color: rgb(23, 124, 192);
+      cursor: pointer;
+      bottom: 109px;
+      margin-left: 90px;
+      border: none;
+    }
+  }
+}
+.main {
+  display: flex;
+  padding: 0px;
+  flex-grow: 1;
+  height: 7.2em;
+}
+@media only screen and (max-width: 475px) {
+  .main {
+    display: none;
+  }
+}
+
+

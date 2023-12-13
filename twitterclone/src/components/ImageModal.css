@@ -1,0 +1,29 @@
+.close {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid black;
+  border-radius: 55%;
+  margin-top: 50px;
+  left: 4%;
+}
+.close:hover {
+  background-color: rgb(78, 77, 77);
+}
+.content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+.imageModel {
+  overflow: hidden;
+}
+@media only screen and (max-width: 475px) {
+  .content {
+    margin-top: 150px;
+  }
+  .imageModel {
+  overflow: hidden;
+}
+}
